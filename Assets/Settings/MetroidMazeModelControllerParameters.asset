@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244314d343d4a4a4c805a14395991fa8, type: 3}
+  m_Name: MetroidMazeModelControllerParameters
+  m_EditorClassIdentifier: 
+  horizontalVelocity:
+    name: HorizontalVelocity
+    type: 1
+  verticalVelocity:
+    name: VerticalVelocity
+    type: 1
+  turn180:
+    name: Turn180
+    type: 9
+  jump:
+    name: Jump
+    type: 9
+  nextJump:
+    name: NextJump
+    type: 9
+  fall:
+    name: Fall
+    type: 9
+  land:
+    name: Land
+    type: 9
+  immediateBreak:
+    name: ImmediateBreak
+    type: 9
+  layDown:
+    name: LayDown
+    type: 9
+  standUp:
+    name: StandUp
+    type: 9
+  jumpAndHang:
+    name: JumpAndHang
+    type: 9
+  hopUpClimb:
+    name: HopUpClimb
+    type: 9
+  climbUpLedge:
+    name: ClimbUpLedge
+    type: 9
+  climb:
+    name: Climb
+    type: 9
+  stand:
+    name: Stand
+    type: 9
+  climbToWalk:
+    name: ClimbToWalk
+    type: 9
+  grounded:
+    name: Grounded
+    type: 4
+  standing:
+    name: Standing
+    type: 4
+  jumping:
+    name: Jumping
+    type: 4
+  jumpCounter:
+    name: JumpCounter
+    type: 3
+  nextJumping:
+    name: NextJumping
+    type: 4
+  turning:
+    name: Turning
+    type: 4
+  laying:
+    name: Laying
+    type: 4
+  climbing:
+    name: Climbing
+    type: 4
+  falling:
+    name: Falling
+    type: 4
+  landing:
+    name: Landing
+    type: 4
+  crawling:
+    name: Crawling
+    type: 4
+  faceDirection:
+    name: FaceDirection
+    type: 3
+  climbingUpLedge:
+    name: ClimbingUpLedge
+    type: 4
+  jumpAndHanging:
+    name: JumpAndHanging
+    type: 4
+  climbingToWalk:
+    name: ClimbingToWalk
+    type: 4
