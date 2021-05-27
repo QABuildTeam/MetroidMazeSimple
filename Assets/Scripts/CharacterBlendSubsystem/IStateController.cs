@@ -4,8 +4,9 @@ using UnityEngine;
 
 namespace MetroidMaze.Character
 {
-    public interface IStatusController
+    public interface IStateController
     {
+        bool Initial { get; }
         bool Active { get; }
         /// <summary>
         /// Initialize animation status controller to handle its animation state
@@ -15,7 +16,7 @@ namespace MetroidMaze.Character
         /// <returns>Integer hash of the controller's animation state</returns>
         int Init(Animator characterAnimator, Rigidbody characterRigidbody);
         void CheckInput(Animator characterAnimator);
-        void CheckStatus(Animator characterAnimator);
+        void CheckState(Animator characterAnimator);
         void Move(Rigidbody characterRigidbody);
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MetroidMaze.Character
 {
-    public class MainCharacterMoveSubController : MonoBehaviour, IStatusController
+    public class MainCharacterMoveSubController : MonoBehaviour
     {
         [Header("Character components")]
         [SerializeField]
@@ -54,7 +54,7 @@ namespace MetroidMaze.Character
             characterAnimator.SetFloat(parameters.horizontalVelocity.Hash, xMove);
         }
 
-        public void CheckStatus(Animator characterAnimator)
+        public void CheckState(Animator characterAnimator)
         {
             move = false;
             bool grounded = groundedCollider.IsGrounded;
@@ -121,7 +121,7 @@ namespace MetroidMaze.Character
             }
         }
 
-        public void Init(Animator characterAnimator, Rigidbody characterRigidbody)
+        public int Init(Animator characterAnimator, Rigidbody characterRigidbody)
         {
             // the character is looking right
             characterAnimator.SetInteger(parameters.faceDirection.Hash, 1);
@@ -130,6 +130,7 @@ namespace MetroidMaze.Character
             characterAnimator.SetBool(parameters.grounded.Hash, false);
             characterAnimator.SetBool(parameters.standing.Hash, false);
             characterAnimator.SetTrigger(parameters.fall.Hash);
+            return 0;
         }
     }
 }
