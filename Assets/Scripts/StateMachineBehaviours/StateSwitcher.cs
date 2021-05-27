@@ -12,6 +12,9 @@ namespace MetroidMaze.Character
         [SerializeField]
         protected bool debugOutput = false;
 
+        [HideInInspector]
+        public int a = 0;
+
         protected abstract MetroidMazeModelControllerParameters.AnimationParameter StateSwitchParameter { get; }
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
