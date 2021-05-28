@@ -7,5 +7,5 @@ using UnityEditor.Animations;
 namespace MetroidMaze.Character
 {
     [Serializable]
-    public class AnimationStateName : AnimatorHashedName { }
+    public class AnimatorTriggerName : AnimatorHashedName { }
 }

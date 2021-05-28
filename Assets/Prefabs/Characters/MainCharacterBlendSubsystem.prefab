@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &367713615652454538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3890429957278924007}
+  - component: {fileID: 3243938306555316349}
+  m_Layer: 0
+  m_Name: FallTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3890429957278924007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367713615652454538}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 873651283089287210}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3243938306555316349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367713615652454538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48ea2b8d56cb8c4db2b871d4375e276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger:
+    animatorController: {fileID: 9100000, guid: 85b338df81d85f7468bdbd0310581098, type: 2}
+    name: Fall
 --- !u!1 &1187001839154550216
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a329193cbb5934eb675c342c7e8034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugOutput: 1
+  debugOutput: 0
 --- !u!1 &3135026716224074216
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +313,98 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugOutput: 0
+--- !u!1 &3353789356759892135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3602071699463420977}
+  - component: {fileID: 2270256024842280698}
+  m_Layer: 0
+  m_Name: LandTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3602071699463420977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353789356759892135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 873651283089287210}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2270256024842280698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353789356759892135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48ea2b8d56cb8c4db2b871d4375e276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger:
+    animatorController: {fileID: 9100000, guid: 85b338df81d85f7468bdbd0310581098, type: 2}
+    name: Land
+--- !u!1 &3353926335732379440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7419363956385340995}
+  - component: {fileID: 6995441171557419613}
+  m_Layer: 0
+  m_Name: LayDownTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7419363956385340995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353926335732379440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 873651283089287210}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6995441171557419613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353926335732379440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48ea2b8d56cb8c4db2b871d4375e276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger:
+    animatorController: {fileID: 9100000, guid: 85b338df81d85f7468bdbd0310581098, type: 2}
+    name: LayDown
 --- !u!1 &5607923159892951135
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +463,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugOutput: 0
+--- !u!1 &5867925039956031253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2062458030772035727}
+  - component: {fileID: 6850838986526253990}
+  m_Layer: 0
+  m_Name: JumpTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2062458030772035727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5867925039956031253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 873651283089287210}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6850838986526253990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5867925039956031253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48ea2b8d56cb8c4db2b871d4375e276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger:
+    animatorController: {fileID: 9100000, guid: 85b338df81d85f7468bdbd0310581098, type: 2}
+    name: Jump
 --- !u!54 &6824707659447425954
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -385,7 +569,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 3890429957278924007}
+  - {fileID: 2062458030772035727}
+  - {fileID: 7419363956385340995}
+  - {fileID: 3602071699463420977}
   m_Father: {fileID: 6824707659252029187}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -422,6 +610,7 @@ MonoBehaviour:
   parameters: {fileID: 11400000, guid: 8a1d1d39a8ccde8459f499c13f4b8330, type: 2}
   groundedCollider: {fileID: 9217876248285710072}
   horizontalInputAxis: Horizontal
+  fallTrigger: {fileID: 3243938306555316349}
   horizontalSpeedFactor: 20
 --- !u!114 &3466224890658577613
 MonoBehaviour:
@@ -442,6 +631,7 @@ MonoBehaviour:
   parameters: {fileID: 11400000, guid: 8a1d1d39a8ccde8459f499c13f4b8330, type: 2}
   groundedCollider: {fileID: 9217876248285710072}
   horizontalInputAxis: Horizontal
+  fallTrigger: {fileID: 3243938306555316349}
   horizontalSpeedFactor: 20
 --- !u!114 &1255013898031919660
 MonoBehaviour:
@@ -462,6 +652,7 @@ MonoBehaviour:
   parameters: {fileID: 11400000, guid: 8a1d1d39a8ccde8459f499c13f4b8330, type: 2}
   groundedCollider: {fileID: 9217876248285710072}
   horizontalInputAxis: Horizontal
+  landTrigger: {fileID: 2270256024842280698}
   horizontalSpeedFactor: 4
 --- !u!114 &6863435124807574765
 MonoBehaviour:
@@ -482,6 +673,7 @@ MonoBehaviour:
   parameters: {fileID: 11400000, guid: 8a1d1d39a8ccde8459f499c13f4b8330, type: 2}
   groundedCollider: {fileID: 9217876248285710072}
   horizontalInputAxis: Horizontal
+  landTrigger: {fileID: 2270256024842280698}
   horizontalSpeedFactor: 4
 --- !u!1 &6431545984842848976
 GameObject:
@@ -974,7 +1166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47710eb3a580b7e4e9a52055eda978b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugOutput: 1
+  debugOutput: 0
 --- !u!1 &6959435827406467338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,14 +1515,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f159ed5f217d3b41a84159ff4aedbef, type: 3}
---- !u!1 &5942309100143349465 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1f159ed5f217d3b41a84159ff4aedbef, type: 3}
-  m_PrefabInstance: {fileID: 6824707661029749640}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1142980667715358233 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 1f159ed5f217d3b41a84159ff4aedbef, type: 3}
+  m_PrefabInstance: {fileID: 6824707661029749640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5942309100143349465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1f159ed5f217d3b41a84159ff4aedbef, type: 3}
   m_PrefabInstance: {fileID: 6824707661029749640}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &6430157339003573347 stripped

@@ -40,7 +40,7 @@ namespace MetroidMaze.Character
             SetHasCollision(colliderEnterCounter > 0);
             if (debugOutput)
             {
-                Debug.Log($"[{GetType().Name}.{nameof(OnTriggerEnter)}] other: name={other.name}, tag={other.tag}, trigger={other.isTrigger}, counter inc = {colliderEnterCounter}, collision={HasCollision}");
+                Debug.Log($"[{GetType().Name}.{nameof(OnTriggerEnter)}] other: name={other.name}, tag={other.tag}, trigger={other.isTrigger}, counter inc={colliderEnterCounter}, collision={HasCollision}");
             }
         }
 
@@ -54,7 +54,7 @@ namespace MetroidMaze.Character
             SetHasCollision(colliderEnterCounter > 0);
             if (debugOutput)
             {
-                Debug.Log($"[{GetType().Name}.{nameof(OnTriggerExit)}] other: name={other.name}, tag={other.tag}, trigger={other.isTrigger}, counter dec = {colliderEnterCounter}, collision={HasCollision}");
+                Debug.Log($"[{GetType().Name}.{nameof(OnTriggerExit)}] other: name={other.name}, tag={other.tag}, trigger={other.isTrigger}, counter dec={colliderEnterCounter}, collision={HasCollision}");
             }
         }
 

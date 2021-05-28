@@ -15,6 +15,9 @@ namespace MetroidMaze.Character
         [Header("Input events")]
         [SerializeField]
         private string horizontalInputAxis = "Horizontal";
+        [Header("Triggers")]
+        [SerializeField]
+        private CharacterStateTrigger landTrigger;
         [Header("Tweaking parameters")]
         [SerializeField]
         private float horizontalSpeedFactor = 4;
@@ -23,7 +26,7 @@ namespace MetroidMaze.Character
         {
             if (groundedCollider.IsGrounded)
             {
-                characterAnimator.SetTrigger(parameters.land.Hash);
+                landTrigger.Trigger(characterAnimator);
             }
         }
     }

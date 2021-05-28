@@ -748,7 +748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7e5d099a39efb4f8880eb82b31097f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugOutput: 0
+  debugOutput: 1
   state:
     animatorController: {fileID: 9100000}
     name: LandRight
@@ -792,7 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7e5d099a39efb4f8880eb82b31097f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugOutput: 0
+  debugOutput: 1
   state:
     animatorController: {fileID: 9100000}
     name: WalkLeft
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7e5d099a39efb4f8880eb82b31097f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugOutput: 0
+  debugOutput: 1
   state:
     animatorController: {fileID: 9100000}
     name: FallLeft
@@ -2094,7 +2094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7e5d099a39efb4f8880eb82b31097f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugOutput: 0
+  debugOutput: 1
   state:
     animatorController: {fileID: 9100000}
     name: WalkRight
@@ -2185,7 +2185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7e5d099a39efb4f8880eb82b31097f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugOutput: 0
+  debugOutput: 1
   state:
     animatorController: {fileID: 9100000}
     name: TurnRight
@@ -2306,7 +2306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7e5d099a39efb4f8880eb82b31097f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugOutput: 0
+  debugOutput: 1
   state:
     animatorController: {fileID: 9100000}
     name: TurnLeft
@@ -2931,7 +2931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7e5d099a39efb4f8880eb82b31097f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugOutput: 0
+  debugOutput: 1
   state:
     animatorController: {fileID: 9100000}
     name: LandLeft

@@ -15,6 +15,9 @@ namespace MetroidMaze.Character
         [Header("Input events")]
         [SerializeField]
         private string horizontalInputAxis = "Horizontal";
+        [Header("Triggers")]
+        [SerializeField]
+        private CharacterStateTrigger fallTrigger;
         [Header("Tweaking parameters")]
         [SerializeField]
         private float horizontalSpeedFactor = 4;
@@ -31,7 +34,14 @@ namespace MetroidMaze.Character
 
         public override void CheckInput(Animator characterAnimator)
         {
-            xMove = Input.GetAxis(horizontalInputAxis);
+            if (groundedCollider.IsGrounded)
+            {
+                xMove = Input.GetAxis(horizontalInputAxis);
+            }
+            else
+            {
+                fallTrigger.Trigger(characterAnimator);
+            }
         }
 
         public override void CheckState(Animator characterAnimator)
