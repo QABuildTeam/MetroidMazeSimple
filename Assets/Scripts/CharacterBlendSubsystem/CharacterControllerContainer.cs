@@ -16,14 +16,20 @@ namespace MetroidMaze.Character
 
         public void OnStateEnter(int animationStateNameHash)
         {
+            
             if (controllers.ContainsKey(animationStateNameHash))
             {
                 currentStateHash = animationStateNameHash;
+                controllers[currentStateHash]?.Enter(characterAnimator, characterRigidbody);
             }
         }
 
         public void OnStateExit(int animationStateNameHash)
         {
+            if (controllers.ContainsKey(animationStateNameHash))
+            {
+                controllers[animationStateNameHash]?.Exit(characterAnimator, characterRigidbody);
+            }
         }
 
         private void Awake()
@@ -44,12 +50,13 @@ namespace MetroidMaze.Character
 
         private void FixedUpdate()
         {
-            if (controllers.ContainsKey(currentStateHash))
+            var stateHash= characterAnimator.GetCurrentAnimatorStateInfo(0).fullPathHash;
+            if (controllers.ContainsKey(stateHash))
             {
-                var currentController = controllers[currentStateHash];
-                currentController.CheckInput(characterAnimator);
-                currentController.CheckState(characterAnimator);
-                currentController.Move(characterRigidbody);
+                var currentController = controllers[stateHash];
+                currentController?.ProcessInput(characterAnimator);
+                currentController?.CheckState(characterAnimator);
+                currentController?.Move(characterRigidbody);
             }
         }
     }

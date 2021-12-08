@@ -32,7 +32,7 @@ namespace MetroidMaze.Character
             return base.Init(characterAnimator, characterRigidbody);
         }
 
-        public override void CheckInput(Animator characterAnimator)
+        public override void ProcessInput(Animator characterAnimator)
         {
             if (groundedCollider.IsGrounded)
             {

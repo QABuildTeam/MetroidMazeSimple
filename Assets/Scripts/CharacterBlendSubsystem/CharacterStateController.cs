@@ -15,9 +15,13 @@ namespace MetroidMaze.Character
 
         public bool Initial => initial;
 
-        public virtual void CheckInput(Animator characterAnimator) { }
+        public virtual void ProcessInput(Animator characterAnimator) { }
 
         public virtual void CheckState(Animator characterAnimator) { }
+
+        public virtual void Enter(Animator characterAnimator, Rigidbody characterRigidbody) { }
+
+        public virtual void Exit(Animator characterAnimator, Rigidbody characterRigidbody) { }
 
         public virtual int Init(Animator characterAnimator, Rigidbody characterRigidbody)
         {

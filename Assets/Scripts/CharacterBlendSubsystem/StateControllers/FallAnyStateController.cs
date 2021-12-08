@@ -6,9 +6,6 @@ namespace MetroidMaze.Character
 {
     public class FallAnyStateController : CharacterStateController
     {
-        [Header("Animation parameters names")]
-        [SerializeField]
-        private MetroidMazeModelControllerParameters parameters;
         [Header("Colliders")]
         [SerializeField]
         private GroundedCollider groundedCollider;
